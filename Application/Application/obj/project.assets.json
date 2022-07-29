@@ -6146,11 +6146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Naida\\source\\repos\\Application\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Naida\\Source\\Repos\\ShapeUp\\Application\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Naida\\source\\repos\\Application\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\Naida\\Source\\Repos\\ShapeUp\\Application\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Naida\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Naida\\source\\repos\\Application\\Application\\obj\\",
+      "outputPath": "C:\\Users\\Naida\\Source\\Repos\\ShapeUp\\Application\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Naida\\AppData\\Roaming\\NuGet\\NuGet.Config",
