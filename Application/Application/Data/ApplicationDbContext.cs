@@ -14,6 +14,7 @@ namespace Application.Data
         {
         }
         public DbSet<Day> Day { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
         public DbSet<Program1> Program1 { get; set; }
         public DbSet<DayVeza> DayVeza { get; set; }
         public DbSet<FollowingVeza> FollowingVeza { get; set; }
@@ -23,6 +24,7 @@ namespace Application.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Day>().ToTable("Day");
+            modelBuilder.Entity<ApplicationUser>().ToTable("ApplicationUser");
             modelBuilder.Entity<Program1>().ToTable("Program1");
             modelBuilder.Entity<DayVeza>().ToTable("DayVeza");
             modelBuilder.Entity<FollowingVeza>().ToTable("FollowingVeza");
