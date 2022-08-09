@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Application"
+    "\\Application",
+    "\\Application\\Application",
+    "\\Application\\Application\\Views",
+    "\\Application\\Application\\Views\\Home",
+    "\\Application\\Application\\wwwroot",
+    "\\Application\\Application\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Application\\Application.sln",
+  "SelectedNode": "\\Application\\Application\\wwwroot\\css\\index.css",
   "PreviewInSolutionExplorer": false
 }

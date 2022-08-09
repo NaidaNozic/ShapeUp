@@ -1,8 +1,176 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿<!DOCTYPE html>
+<html lang="en">
+@{
+    ViewData["Title"] = "Pocetna stranica";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<style>
+    body {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/woman2.jpg");
+    background-attachment: fixed;
+}
+.Title{
+    position:relative;
+    float:right;
+    margin-top:10%;
+    height:40%;
+    width:43%;
+}
+.p2{
+    font-family: "Copperplate","Lucida Console", "Courier New", monospace;
+    font-size:40px;
+}
+.p1{
+    font-family: "Lucida Handwriting","Lucida Console", "Courier New", monospace;
+    font-size:20px;
+}
+
+.Wrapper{
+     position: absolute;
+     bottom: 0px;
+     width:70%;
+     height:230px;
+     margin-bottom:10px;
+     margin-left:30px;
+}
+.Content{
+     position:relative;
+     height:200px;
+     width:25%;
+     background-color:white;
+     opacity:0.6;
+     margin-top:30px
+}
+.Button1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left:90px;
+}
+
+.Button1 ul li {
+    --c: brown;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.2em solid var(--c);
+    border-radius: 0.5em;
+    width: 10em;
+    height: 2.5em;
+    font-weight: bold;
+    font-family: "Lucida Handwriting","Lucida Console", "Courier New", monospace;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 2em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+.Button1 ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.Button1 ul li:hover {
+    color: black;
+}
+
+.Button1 ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.Button1 ul li span:nth-child(1) {
+    --n: 1;
+}
+
+.Button1 ul li span:nth-child(2) {
+    --n: 2;
+}
+
+.Button1 ul li span:nth-child(3) {
+    --n: 3;
+}
+
+.Button1 ul li span:nth-child(4) {
+    --n: 4;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css"> 
+</head>
+
+<body>
+  <div class="Title">
+      <h4 class="p1" style="margin-left:75px;">Welcome to ShapeUp!</h4>
+      <br />
+      <h1 class="p2">Get In Shape & Be</h1>
+      <br />
+      <h1 class="p2" style="margin-left:105px;font-weight:bold">Healthy</h1>
+      <br />
+      <nav class="Button1">
+  <ul>
+    <li>
+      Read more
+      <span></span><span></span><span></span><span></span>
+    </li>
+  </ul>
+</nav>
+  </div> 
+
+  <div class="Wrapper">
+       <div style="float:left;margin-left:50px"class="Content">
+           <img style="height:3.5em;margin-left:13px;margin-top:18px" 
+            src="~/images/discover-icon.png">
+            <p class="p1"style="color:black;font-weight:bold;float:right;margin-top:30px;margin-right:80px">
+               Discover</p>
+            <p style="margin-left:10px;margin-top:15px">
+                There's new workout programs everyday.
+                Explore and find the perfect ones for you!
+            </p>
+       </div>
+       <div style="margin-right:50px; float:right;"class="Content">
+           <img style="height:3em;margin-left:17px;margin-top:18px" 
+                 src="~/images/schedule-icon.png">
+            <p class="p1"style="color:black;font-weight:bold;float:right;margin-top:30px;margin-right:80px">
+               Schedule</p>
+            <p style="margin-left:10px;margin-top:20px;margin-right:10px">
+                Make a weekly workout schedule to stay consistent and achive your goals!
+            </p>
+       </div>
+       <center>
+           <div style=""class="Content">
+            <img style="height:3em;margin-left:13px;margin-top:18px" 
+                 src="~/images/create-icon.png">
+            <p class="p1"style="color:black;font-weight:bold;float:right;margin-top:30px;margin-right:80px">
+               Create</p>
+            <p style="margin-left:10px;margin-top:20px;margin-right:10px">
+                Create your own workout programs and share them with the world!
+            </p>
+           </div>
+       </center>
+      
+      
+  </div>
+  
+</body> 
+
+</html>
